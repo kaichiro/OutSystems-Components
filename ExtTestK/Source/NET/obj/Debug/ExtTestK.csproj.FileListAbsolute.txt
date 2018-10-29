@@ -1,0 +1,7 @@
+C:\Transfer\GTI-Docs\ExtTestK\Source\NET\bin\OutSystems.NssExtTestK.dll
+C:\Transfer\GTI-Docs\ExtTestK\Source\NET\bin\OutSystems.NssExtTestK.pdb
+C:\Transfer\GTI-Docs\ExtTestK\Source\NET\bin\OutSystems.NssExtTestK.xml
+C:\Transfer\GTI-Docs\ExtTestK\Source\NET\obj\Debug\ExtTestK.csprojAssemblyReference.cache
+C:\Transfer\GTI-Docs\ExtTestK\Source\NET\obj\Debug\ExtTestK.csproj.CoreCompileInputs.cache
+C:\Transfer\GTI-Docs\ExtTestK\Source\NET\obj\Debug\OutSystems.NssExtTestK.dll
+C:\Transfer\GTI-Docs\ExtTestK\Source\NET\obj\Debug\OutSystems.NssExtTestK.pdb

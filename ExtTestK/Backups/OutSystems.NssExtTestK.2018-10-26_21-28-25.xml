@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OutSystems.NssExtTestK</name>
+    </assembly>
+    <members>
+        <member name="M:OutSystems.NssExtTestK.CssExtTestK.MssGetRandonNumber(System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            
+            </summary>
+            <param name="ssNumberBegin">Número Inicial</param>
+            <param name="ssNumberEnd">Número Final</param>
+            <param name="ssNumberRandomic">Número randômico</param>
+        </member>
+        <member name="M:OutSystems.NssExtTestK.IssExtTestK.MssGetRandonNumber(System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            
+            </summary>
+            <param name="ssNumberBegin">Número Inicial</param>
+            <param name="ssNumberEnd">Número Final</param>
+            <param name="ssNumberRandomic">Número randômico</param>
+        </member>
+        <member name="T:OutSystems.NssExtTestK.STAbcStructure">
+            <summary>
+            Structure <code>STAbcStructure</code> that represents the Service Studio structure <code>Abc</code>
+             <p> Description: </p>
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssExtTestK.STAbcStructure.Read(System.Data.IDataReader,System.Int32@)">
+            <summary>
+            Read a record from database
+            </summary>
+            <param name="r"> Data base reader</param>
+            <param name="index"> index</param>
+        </member>
+        <member name="M:OutSystems.NssExtTestK.STAbcStructure.ReadDB(System.Data.IDataReader)">
+            <summary>
+            Read from database
+            </summary>
+            <param name="r"> Data reader</param>
+        </member>
+        <member name="M:OutSystems.NssExtTestK.STAbcStructure.ReadIM(OutSystems.NssExtTestK.STAbcStructure)">
+            <summary>
+            Read from record
+            </summary>
+            <param name="r"> Record</param>
+        </member>
+        <member name="T:OutSystems.NssExtTestK.RCAbcRecord">
+            <summary>
+            Structure <code>RCAbcRecord</code>
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssExtTestK.RCAbcRecord.Read(System.Data.IDataReader,System.Int32@)">
+            <summary>
+            Read a record from database
+            </summary>
+            <param name="r"> Data base reader</param>
+            <param name="index"> index</param>
+        </member>
+        <member name="M:OutSystems.NssExtTestK.RCAbcRecord.ReadDB(System.Data.IDataReader)">
+            <summary>
+            Read from database
+            </summary>
+            <param name="r"> Data reader</param>
+        </member>
+        <member name="M:OutSystems.NssExtTestK.RCAbcRecord.ReadIM(OutSystems.NssExtTestK.RCAbcRecord)">
+            <summary>
+            Read from record
+            </summary>
+            <param name="r"> Record</param>
+        </member>
+        <member name="T:OutSystems.NssExtTestK.RLAbcRecordList">
+            <summary>
+            RecordList type <code>RLAbcRecordList</code> that represents a record list of <code>Abc</code>
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssExtTestK.RLAbcRecordList.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssExtTestK.RLAbcRecordList.#ctor(System.Data.IDbTransaction)">
+            <summary>
+            Constructor with transaction parameter
+            </summary>
+            <param name="trans"> IDbTransaction Parameter</param>
+        </member>
+        <member name="M:OutSystems.NssExtTestK.RLAbcRecordList.#ctor(System.Data.IDbTransaction,OutSystems.HubEdition.RuntimePlatform.Db.OSList{OutSystems.NssExtTestK.RCAbcRecord}.ReadDBMethodDelegate)">
+            <summary>
+            Constructor with transaction parameter and alternate read method
+            </summary>
+            <param name="trans"> IDbTransaction Parameter</param>
+            <param name="alternateReadDBMethod"> Alternate Read Method</param>
+        </member>
+        <member name="M:OutSystems.NssExtTestK.RLAbcRecordList.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor declaration for serialization
+            </summary>
+            <param name="info"> SerializationInfo</param>
+            <param name="context"> StreamingContext</param>
+        </member>
+        <member name="M:OutSystems.NssExtTestK.RLAbcRecordList.NewList">
+            <summary>
+            Create as new list
+            </summary>
+            <returns>The new record list</returns>
+        </member>
+    </members>
+</doc>
