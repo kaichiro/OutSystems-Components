@@ -1,1 +1,5 @@
+# Arquivos de backup
+ExtTestK/Backups/
 
+# Arquivos do Visual Studio
+./ExtTestK/Source/NET/.vs/*

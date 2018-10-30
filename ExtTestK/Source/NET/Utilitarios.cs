@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace OutSystems.NssExtTestK
 {
-    public class Utils
+    public class Utilitarios
     {
-        public int _RandonNumber(int a, int b)
+        public int __RandonNumber(int a, int b)
         {
             Random random = new Random();
             return (int) ((random.NextDouble() * (a - b)) + a);

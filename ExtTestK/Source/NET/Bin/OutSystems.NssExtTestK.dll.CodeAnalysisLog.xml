@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio\2017\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="15.0">
+ <Targets>
+  <Target Name="C:\Transfer\OutSystems\Components\ExtTestK\Source\NET\bin\OutSystems.NssExtTestK.dll">
+   <Modules>
+    <Module Name="outsystems.nssexttestk.dll">
+     <Namespaces>
+      <Namespace Name="OutSystems.NssExtTestK">
+       <Types>
+        <Type Name="RCAbcRecord" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementSerializationConstructors" Category="Microsoft.Usage" CheckId="CA2229" Status="Active" Created="2018-10-30 12:00:38Z" FixCategory="NonBreaking">
+           <Issue Name="MakeSealedMagicConstructorPrivate" Certainty="95" Level="Error">Declare o construtor de serialização de 'RCAbcRecord', um tipo selado, como privado.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="RLAbcRecordList" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementSerializationConstructors" Category="Microsoft.Usage" CheckId="CA2229" Status="Active" Created="2018-10-30 12:00:38Z" FixCategory="NonBreaking">
+           <Issue Name="MakeUnsealedMagicConstructorFamily" Certainty="95" Level="Error">Declare o construtor de serialização de 'RLAbcRecordList', um tipo não selado, como protegido.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="STAbcStructure" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementSerializationConstructors" Category="Microsoft.Usage" CheckId="CA2229" Status="Active" Created="2018-10-30 12:00:38Z" FixCategory="NonBreaking">
+           <Issue Name="MakeSealedMagicConstructorPrivate" Certainty="95" Level="Error">Declare o construtor de serialização de 'STAbcStructure', um tipo selado, como privado.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="ImplementSerializationConstructors" Category="Microsoft.Usage" CheckId="CA2229">
+   <Name>Implementar construtores de serialização</Name>
+   <Description>A assinatura do construtor aceita os mesmos argumentos de ISerializable.GetObjectData, ou seja, uma instância de SerializationInfo e uma de StreamingContext. O construtor deve ser protegido para classes não seladas e privado para classes lacradas. Falhar ao implementar um construtor de serialização causará a falha da desserialização e acionará uma SerializationException.</Description>
+   <Resolution Name="MakeSealedMagicConstructorPrivate">Declare o construtor de serialização de {0}, um tipo selado, como privado.</Resolution>
+   <Resolution Name="MakeUnsealedMagicConstructorFamily">Declare o construtor de serialização de {0}, um tipo não selado, como protegido.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182343.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="usagerules.dll" Version="15.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Categoria</String>
+  <String Key="Certainty">Certeza</String>
+  <String Key="CollapseAll">Recolher Tudo</String>
+  <String Key="CheckId">Verificar ID</String>
+  <String Key="Error">Erro</String>
+  <String Key="Errors">erro(s)</String>
+  <String Key="ExpandAll">Expandir Tudo</String>
+  <String Key="Help">Ajuda</String>
+  <String Key="Line">Linha</String>
+  <String Key="Messages">mensagem(ns)</String>
+  <String Key="LocationNotStoredInPdb">[Local não armazenado em Pdb]</String>
+  <String Key="Project">Projeto</String>
+  <String Key="Resolution">Resolução</String>
+  <String Key="Rule">Regra</String>
+  <String Key="RuleFile">Arquivo de Regra</String>
+  <String Key="RuleDescription">Descrição da Regra</String>
+  <String Key="Source">Origem</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Destino</String>
+  <String Key="Warning">Aviso</String>
+  <String Key="Warnings">aviso(s)</String>
+  <String Key="ReportTitle">Relatório de Análise de Código</String>
+ </Localized>
+</FxCopReport>

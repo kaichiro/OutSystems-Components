@@ -105,6 +105,7 @@
     <Compile Include="RecordLists.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Utilitarios.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
